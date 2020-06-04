@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='forms.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3d69719818.js" crossorigin="anonymous"></script>
+    {% if title %}
+    <title>ArneDeV - {{title}}</title>
+    {% else %}
+    <title>ArneDeV</title>
+    {% endif %}
+</head>
+
+<body>
+    <div id="container-page">
+        <div id="content-page">
+            <header>
+                <div class="logo">ArneDeV</div>
+                <nav>
+                    <ul class="nav_links">
+                        <li>
+                            <a href="/"> Home </a>
+                        </li>
+                        <li>
+                            <a href="/projects"> Projects </a>
+                        </li>
+                        <li>
+                            <a href="/blog"> Blog </a>
+                        </li>
+                    </ul>
+
+                </nav>
+                <ul class="log-in">
+                    <li><a href="/login">Log in</a></li>
+                    <li><a href="/register">Register</a></li>
+                </ul>
+            </header>
+            <main>
+                {% block content %}
+                {% endblock %}
+            </main>
+        </div>
+        <footer id='footer'>
+            Arne De Veylder 2020 |  <a href="mailto:arne.de.veylder@telenet.be"><i
+                    class='fas fa-envelope'></i></a>
+            <i class='fab fa-facebook-messenger'></i>
+            <i class='fab fa-instagram'></i>
+        </footer>
+    </div>
+</body>
+
+</html>

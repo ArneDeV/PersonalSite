@@ -1,0 +1,72 @@
+fieldset {
+    width: 100%;
+    border: none;
+}
+
+legend {
+    border-bottom: 2vh;
+}
+
+#already {
+    border-top: 2vh;
+    justify-content: start;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+#noggeen {
+    border-top: 2vh;
+    justify-content: start;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+input {
+    width: 80vw;
+    padding: 0.5vh;
+    margin-top: 5px;
+    border: 1px rgb(37, 37, 37) solid;
+    border-radius: 4px;
+    justify-content: right;
+}
+
+.button {
+    margin: 14px 0;
+    background-color: #1b6ca8;
+    border: 1px #1b6ca8 solid;
+    border-radius: 5px;
+    transition: all 0.3s ease 0s;
+    color: white;
+}
+
+.button:hover {
+    border-color: #144178;
+    background-color: #144178;
+}
+
+.form-label {
+    justify-content: left;
+    display: inline-block;
+    float: left;
+}
+
+.remember-box {
+    display: inline-block;
+    width: auto;
+    margin-left: 7px;
+    font-size: 0.9em;
+}
+
+#remember {
+    justify-content: left;
+    text-align: left;
+}
+
+.rem-label {
+    font-size: 0.9em;
+    margin-top: 2px;
+}
+
+small a:hover {
+    color: rgb(56, 56, 255);
+}

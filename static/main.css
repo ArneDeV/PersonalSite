@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    justify-content: center;
+    text-align: center;
+    padding: 0 10%;
+}
+
+#container-page {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-page {
+    padding-bottom: 2.5rem;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+    text-align: center;
+    height: 2.5rem;
+    width: 100%;
+    background-color: #bec2bf;
+    padding-top: 10px;
+    color: rgb(37, 37, 37);
+    font-size: 20px;
+}
+
+
+
+#footer i {
+    padding: 0 0.5%;
+}
+
+
+li, a, button {
+    color: rgb(37, 37, 37);
+    text-decoration: none;
+}
+
+.logo {
+    cursor: pointer;
+    display: inline-block;
+    margin-right: auto;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+header {
+    font-size: 2.2vh;
+    background-color: #bec2bf;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1% 0 1% 10%;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: rgba(255, 255, 255, 0.753);
+}
+
+.log-in {
+    padding-left: 3%;
+    list-style: none;
+    padding: 0 3%;
+}
+.log-in li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.log-in li a {
+    color: #6e6e6e;
+    transition: all 0.2s ease 0s;
+}
+
+.log-in li a:hover {
+    color: rgba(255, 255, 255, 0.753);
+}
+
