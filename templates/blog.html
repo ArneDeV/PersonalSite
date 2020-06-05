@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+{% for post in blog_posts %}
+    <article class="post">
+        <h1>{{post.title}}</h1>
+        <small>{{post.date}}</small>
+        <p>{{post.content}}</p>
+    </article>
+{% endfor %}
+{% endblock content %} 
