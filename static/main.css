@@ -33,12 +33,9 @@ main {
     font-size: 20px;
 }
 
-
-
 #footer i {
     padding: 0 0.5%;
 }
-
 
 li, a, button {
     color: rgb(37, 37, 37);
@@ -84,6 +81,7 @@ header {
     list-style: none;
     padding: 0 3%;
 }
+
 .log-in li {
     display: inline-block;
     padding: 0 10px;
@@ -96,5 +94,34 @@ header {
 
 .log-in li a:hover {
     color: rgba(255, 255, 255, 0.753);
+}
+
+.blog-post {
+    border: 2px rgb(37, 37, 37) solid;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    justify-content: left;
+    background-color: rgba(240, 240, 240, 0.753);
+}
+
+.tekst {
+    justify-content: left;
+    text-align: left;
+    margin: 10px 0;
+    margin-left: 35px;
+}
+
+
+.datum {
+    margin-right: 35px;
+    border-bottom: solid rgb(117, 117, 117);
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    color: rgba(51, 51, 51, 0.753);
+}
+
+.inhoud {
+    width: 97%;
 }
 

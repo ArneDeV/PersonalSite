@@ -6,7 +6,8 @@ app.config['SECRET_KEY'] = 'e0fff506caeff08d660240ee10e953e9'
 
 blog_posts = [
     {'title': 'Test Post 1',
-    'content': 'Dit is een erste test post',
+    'content': '''Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis illo delectus saepe, error quisquam pariatur laudantium at ab repellendus nihil. Similique dolor vero soluta adipisci doloribus repellendus exercitationem voluptatum qui.
+    Deze tekst moet lang zijn vandaar al deze zever, hierna zal deze zever nog eens voorkomen gewoon voor de tekst te vullen Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis illo delectus saepe, error quisquam pariatur laudantium at ab repellendus nihil. Similique dolor vero soluta adipisci doloribus repellendus exercitationem voluptatum qui.''',
     'date': '05/06/2020'},
     {'title': 'Test Post 2',
     'content': 'Dit is een tweede test post',
