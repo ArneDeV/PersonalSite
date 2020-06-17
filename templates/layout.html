@@ -26,16 +26,15 @@
                             <a href="/"> Home </a>
                         </li>
                         <li>
-                            <a href="/projects"> Projects </a>
+                            <a href="{{url_for('photos')}}"> Foto's </a>
                         </li>
                         <li>
-                            <a href="/blog"> Blog </a>
+                            <a href="{{url_for('blog')}}"> Blog </a>
                         </li>
                     </ul>
-
                 </nav>
                 <ul class="log-in">
-                    <li><a href="/login">Log in</a></li>
+                    <li id='login'><a href="/login">Log in</a></li>
                     <li><a href="/register">Register</a></li>
                 </ul>
             </header>

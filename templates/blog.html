@@ -4,8 +4,15 @@
 <article class="blog-post">
     <div class="tekst">
         <h1 class='titel'>{{post.title}}</h1>
-        <p class="datum">  {{post.date}}</p>
-        <p class="inhoud">{{post.content}}</p>
+        <p class="datum"> {{post.date}}</p>
+        <div class="inhoud">
+            {% if post.photo != False %}
+            <img alt="Artikel afbeelding" src="{{url_for('static', filename=post.photo)}}" class="artikel-afbeelding">
+            {% endif %}
+            <p>
+                {{post.content}}
+            </p>
+        </div>
     </div>
 </article>
 {% endfor %}

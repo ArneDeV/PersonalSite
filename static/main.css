@@ -76,11 +76,12 @@ header {
     color: rgba(255, 255, 255, 0.753);
 }
 
-.log-in {
+
+/* .log-in {
     padding-left: 3%;
     list-style: none;
     padding: 0 3%;
-}
+} */
 
 .log-in li {
     display: inline-block;
@@ -123,5 +124,16 @@ header {
 
 .inhoud {
     width: 97%;
+    overflow: auto;
+    display: block;
+    margin-right: 0px;
+    text-align: justify;
 }
 
+.artikel-afbeelding {
+    width: 15%;
+    height: 15%;
+    float: right;
+    margin-left: auto;
+    clear:both;
+}

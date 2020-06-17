@@ -7,11 +7,20 @@ app.config['SECRET_KEY'] = 'e0fff506caeff08d660240ee10e953e9'
 blog_posts = [
     {'title': 'Test Post 1',
     'content': '''Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis illo delectus saepe, error quisquam pariatur laudantium at ab repellendus nihil. Similique dolor vero soluta adipisci doloribus repellendus exercitationem voluptatum qui.
-    Deze tekst moet lang zijn vandaar al deze zever, hierna zal deze zever nog eens voorkomen gewoon voor de tekst te vullen Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis illo delectus saepe, error quisquam pariatur laudantium at ab repellendus nihil. Similique dolor vero soluta adipisci doloribus repellendus exercitationem voluptatum qui.''',
-    'date': '05/06/2020'},
+    Deze tekst moet lang zijn vandaar al deze zever, hierna zal deze zever nog eens voorkomen gewoon voor de tekst te vullen Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis illo delectus saepe, error quisquam pariatur laudantium at ab repellendus nihil. Similique dolor vero soluta adipisci doloribus repellendus exercitationem voluptatum qui. 
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis illo delectus saepe, error quisquam pariatur laudantium at ab repellendus nihil. Similique dolor vero soluta adipisci doloribus repellendus exercitationem voluptatum qui.
+    Deze tekst moet lang zijn vandaar al deze zever, hierna zal deze zever nog eens voorkomen gewoon voor de tekst te vullen Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis illo delectus saepe, error quisquam pariatur laudantium at ab repellendus nihil. Similique dolor vero soluta adipisci doloribus repellendus exercitationem voluptatum qui.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis illo delectus saepe, error quisquam pariatur laudantium at ab repellendus nihil. Similique dolor vero soluta adipisci doloribus repellendus exercitationem voluptatum qui.
+    Deze tekst moet lang zijn vandaar al deze zever, hierna zal deze zever nog eens voorkomen gewoon voor de tekst te vullen Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis illo delectus saepe, error quisquam pariatur laudantium at ab repellendus nihil. Similique dolor vero soluta adipisci doloribus repellendus exercitationem voluptatum qui.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis illo delectus saepe, error quisquam pariatur laudantium at ab repellendus nihil. Similique dolor vero soluta adipisci doloribus repellendus exercitationem voluptatum qui.
+    Deze tekst moet lang zijn vandaar al deze zever, hierna zal deze zever nog eens voorkomen gewoon voor de tekst te vullen Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis illo delectus saepe, error quisquam pariatur laudantium at ab repellendus nihil. Similique dolor vero soluta adipisci doloribus repellendus exercitationem voluptatum qui.
+    ''',
+    'date': '05/06/2020', 'photo': 'images/test.png'},
     {'title': 'Test Post 2',
     'content': 'Dit is een tweede test post',
-    'date': '05/06/2020'}
+    'date': '05/06/2020',
+    'photo': False
+    }
 ]
 
 
@@ -22,9 +31,9 @@ def home():
     return render_template('home.html')
 
 
-@app.route('/projects')
-def projects():
-    return render_template('projects.html', title='Projects')
+@app.route('/photos')
+def photos():
+    return render_template('photos.html', title="Foto's")
 
 
 @app.route('/register')
