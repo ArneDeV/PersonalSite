@@ -140,7 +140,7 @@ header {
     display: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 780px) {
     .logo {
         font-size: 1.9rem;
     }
