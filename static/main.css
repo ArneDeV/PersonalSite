@@ -125,12 +125,12 @@ header {
     overflow: auto;
     display: block;
     margin-right: 0px;
-    text-align: justify;
+    text-align: left;
 }
 
 .artikel-afbeelding {
-    width: 15%;
-    height: 15%;
+    width: 20%;
+    height: 20%;
     float: right;
     margin-left: auto;
     clear: both;
