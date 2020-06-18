@@ -187,4 +187,9 @@ header {
     .m-link a {
         padding: 5px 0;
     }
+
+    .artikel-afbeelding {
+        height: 40%;
+        width: 40%;
+    }
 }
