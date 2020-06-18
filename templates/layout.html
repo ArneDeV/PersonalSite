@@ -18,8 +18,8 @@
         }
     </script>
     <meta charset="UTF-8">
-    <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="theme-color" content="#bec2bf">
+    <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='forms.css') }}">
@@ -97,6 +97,11 @@
                 {% endblock %}
             </main>
         </div>
+        <div id="installContainer" class="hidden">
+            <button id="butInstall" type="button">
+              Install
+            </button>
+          </div>
         <footer id='footer'>
             Arne De Veylder 2020 | <a href="mailto:arne.de.veylder@telenet.be"><i class='fas fa-envelope'></i></a>
             <i class='fab fa-facebook-messenger'></i>
@@ -113,6 +118,7 @@
             }
         }
     </script>
+    <script src="/script.js" defer></script>
 </body>
 
 </html>
