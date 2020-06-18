@@ -76,7 +76,6 @@ header {
     color: rgba(255, 255, 255, 0.753);
 }
 
-
 /* .log-in {
     padding-left: 3%;
     list-style: none;
@@ -113,7 +112,6 @@ header {
     margin-left: 35px;
 }
 
-
 .datum {
     margin-right: 35px;
     border-bottom: solid rgb(117, 117, 117);
@@ -135,5 +133,58 @@ header {
     height: 15%;
     float: right;
     margin-left: auto;
-    clear:both;
+    clear: both;
+}
+
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 780px) {
+    .logo {
+        font-size: 1.9rem;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: inline-block;
+    }
+    #mobile {
+        margin-right: 15px;
+        margin-top: 15px;
+        color: #000000;
+        font-size: 25px;
+    }
+    #mobile-links {
+        display: none;
+    }
+    #mobile-links a {
+        text-decoration: none;
+        font-size: 20px;
+        display: block;
+        /* color: #6e6e6e;  color voor login*/ 
+        color: rgb(37, 37, 37);
+        transition: all 0.3s ease 0s;
+    }
+    #m-login a {
+        color: #6e6e6e;
+    }
+
+    #m-register a {
+        color: #6e6e6e;
+    }
+
+    ul.mobile {
+        background-color: #bec2bf;
+        width: 100%;
+        padding: 0% 0 3% 10%;
+        list-style: none;
+    }
+    #mobile-links a:hover {
+        color: rgba(255, 255, 255, 0.753);
+    }
+    .m-link a {
+        padding: 5px 0;
+    }
 }

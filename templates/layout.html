@@ -21,7 +21,7 @@
             <header>
                 <div class="logo">ArneDeV</div>
                 <nav>
-                    <ul class="nav_links">
+                    <ul class="nav_links desktop">
                         <li>
                             <a href="/"> Home </a>
                         </li>
@@ -33,23 +33,52 @@
                         </li>
                     </ul>
                 </nav>
-                <ul class="log-in">
-                    <li id='login'><a href="/login">Log in</a></li>
-                    <li><a href="/register">Register</a></li>
+                <ul class="log-in desktop">
+                    <li id='login'><a href="{{url_for('login')}}">Log in</a></li>
+                    <li><a href="{{url_for('register')}}">Register</a></li>
                 </ul>
+                <div class="log-in mobile">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars" id="mobile"></i>
+                    </a>
+                </div>
             </header>
+            <div id="mobile-links">
+                <ul class="mobile m-link">
+                    <li>
+                        <a href="/"> Home </a>
+                    </li>
+                    <li>
+                        <a href="{{url_for('photos')}}"> Foto's </a>
+                    </li>
+                    <li>
+                        <a href="{{url_for('blog')}}"> Blog </a>
+                    </li>
+                    <li id="m-login"><a href="{{url_for('login')}}">Log in</a></li>
+                    <li id="m-register"><a href="{{url_for('register')}}">Register</a></li>
+                </ul>
+            </div>
             <main>
                 {% block content %}
                 {% endblock %}
             </main>
         </div>
         <footer id='footer'>
-            Arne De Veylder 2020 |  <a href="mailto:arne.de.veylder@telenet.be"><i
-                    class='fas fa-envelope'></i></a>
+            Arne De Veylder 2020 | <a href="mailto:arne.de.veylder@telenet.be"><i class='fas fa-envelope'></i></a>
             <i class='fab fa-facebook-messenger'></i>
             <i class='fab fa-instagram'></i>
         </footer>
     </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("mobile-links");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </body>
 
 </html>
