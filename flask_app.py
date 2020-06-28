@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, make_response, send_from_directory
 from forms import RegistrationForm, LoginForm
 
 app = Flask(__name__)
@@ -75,6 +75,13 @@ def blog():
     posts = blog_posts
     return render_template('blog.html', title='Blog', blog_posts=posts)
 
+@app.route(‘/sw.js’)
+def sw():
+    response=make_response(
+                     send_from_directory(‘static’,filename=‘sw.js’))
+    #change the content header file
+    response.headers[‘Content-Type’]=‘application/javascript’
+    return response
 
 if __name__ == "__main__":
     app.run(debug=True)
