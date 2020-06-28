@@ -140,6 +140,84 @@ header {
     display: none;
 }
 
+.photo-container {
+    border: 2px rgb(37, 37, 37) solid;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    justify-content: left;
+    background-color: rgba(240, 240, 240, 0.753);
+}
+
+.photo-titel {
+    font-size: 20px;
+    justify-content: left;
+    text-align: left;
+    margin: 10px 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-bottom: solid rgb(117, 117, 117);
+}
+
+.galery {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    min-height: 80vh;
+    grid-gap: 0.4rem;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+
+
+.img-container img:hover {
+    transform: scale(1.05);
+}
+
+.modal {
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.25s ease-out;
+}
+
+.modal.open {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.full-img {
+    position: absolute;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: all 0.25s ease-out;
+}
+
+.full-img.open {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal p {
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+}
 
 @media screen and (max-width: 780px) {
     .logo {

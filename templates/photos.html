@@ -1,4 +1,23 @@
 {% extends "layout.html" %}
 {% block content %}
-<h1>ToDo: Foto album implementeren</h1>
+<div class="photo-container">
+    <h1 class="photo-titel">Quiz Project</h1>
+    <div class="galery">
+        <!-- Todo For loop die loopt over alle foto's voor dit album  -->
+        {% for photo in photos %}
+        <div class="img-container">
+            <img src="{{url_for('static', filename=photo.preview)}}" alt="{{photo.alt}}"
+                data-orginal="{{url_for('static', filename=photo.full)}}">
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<div class="modal">
+    <img src="" alt="Full image of selected photo" class="full-img"/>
+    <p class="caption"></p>
+</div>
 {% endblock content %}
+
+{% block scripts %}
+<script src="{{url_for('static', filename='app.js')}}"></script>
+{% endblock scripts%}
