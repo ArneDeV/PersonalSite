@@ -42,7 +42,23 @@ photo_galery = [
         'preview': '/images/galeryTest/view-of-elephant-in-water-preview.jpg',
         'full': '/images/galeryTest/view-of-elephant-in-water-full.jpg',
         'alt': 'Olifanten in het water'
-    }
+    },
+    {
+        'preview': '/images/galeryTest/nature-red-forest-leaves-preview.jpg',
+        'full': '/images/galeryTest/nature-red-forest-leaves-full.jpg',
+        'alt': 'Herfst'
+    },
+    {
+        'preview': '/images/galeryTest/nature-red-forest-leaves-preview.jpg',
+        'full': '/images/galeryTest/nature-red-forest-leaves-full.jpg',
+        'alt': 'Herfst'
+    },
+    {
+        'preview': '/images/galeryTest/nature-red-forest-leaves-preview.jpg',
+        'full': '/images/galeryTest/nature-red-forest-leaves-full.jpg',
+        'alt': 'Herfst'
+    },
+    
 ]
 
 
