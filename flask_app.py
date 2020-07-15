@@ -58,7 +58,6 @@ photo_galery = [
         'full': '/images/galeryTest/nature-red-forest-leaves-full.jpg',
         'alt': 'Herfst'
     },
-    
 ]
 
 
