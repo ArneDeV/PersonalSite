@@ -120,6 +120,40 @@ header {
     color: rgba(51, 51, 51, 0.753);
 }
 
+/* *Alerts */
+.alert {
+    padding: 20px;
+    color: white;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-radius: 7px;
+  }
+  
+.alert-goed {
+    background-color: #29bd61;
+}
+
+.alert-failed {
+    background-color: #971414;
+}
+
+  /* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+  }
+
 .inhoud {
     width: 97%;
     overflow: auto;

@@ -70,3 +70,15 @@ input {
 small a:hover {
     color: rgb(56, 56, 255);
 }
+
+.is-invalid {
+    border-color: #ff0000;
+    border-width: 2px;
+}
+
+.invalid-text {
+    justify-content: start;
+    color: #ff0000;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
