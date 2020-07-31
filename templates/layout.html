@@ -2,14 +2,28 @@
 <html lang="en">
 
 <head>
+    <!-- Meta Tags, app bar voor Apple support -->
     <meta charset="UTF-8">
-    <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icons en styling, letertype, ... -->
+    <link rel="icon" href="{{url_for('static', filename='/images/icons/favicon.ico')}}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='forms.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3d69719818.js" crossorigin="anonymous"></script>
-    <meta name="theme-color" content="#ffffff">
+
+    <link rel="manifest" href="{{url_for('static', filename='manifest.json')}}">
+    <!-- ! IOS support voor icons -->
+    <link rel="apple-touch-icon" href="{{url_for('static', filename='images/icons/apple-icon-57x57.png')}}">
+    <link rel="apple-touch-icon" href="{{url_for('static', filename='images/icons/apple-icon-60x60.png')}}">
+    <link rel="apple-touch-icon" href="{{url_for('static', filename='images/icons/apple-icon-72x72.png')}}">
+    <link rel="apple-touch-icon" href="{{url_for('static', filename='images/icons/apple-icon-114x114.png')}}">
+    <link rel="apple-touch-icon" href="{{url_for('static', filename='images/icons/apple-icon-144x144.png')}}">
+    <link rel="apple-touch-icon" href="{{url_for('static', filename='images/icons/apple-icon-180x180.png')}}">
+    <meta name="apple-mobile-web-app-status-bar" content="#bec2bf">
+    <!-- ! Support voor windows 10 icons -->
+    <meta name="msapplication-TileColor" content="#bec2bf">
+    <meta name="msapplication-TileImage" content="{{url_for('static', filename='images/icons/ms-icon-144x144.png')}}">
     {% if title %}
     <title>ArneDeV - {{title}}</title>
     {% else %}
@@ -60,6 +74,7 @@
                     <li id="m-register"><a href="{{url_for('register')}}">Register</a></li>
                 </ul>
             </div>
+            <!-- * Einde navbar -->
             <main>
                 {% with messages = get_flashed_messages(with_categories=true) %}
                     {% if messages %}
