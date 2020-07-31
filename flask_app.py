@@ -98,24 +98,24 @@ def photos():
     return render_template('photos.html', title="Foto's", photos=photos)
 
 
-@app.route('/register', methods=['GET', 'POST'])
+@app.route('/register') #methods=['GET', 'POST']
 def register():
     form = RegistrationForm()
-    if form.validate_on_submit():
-        flash(f'Account created for {form.username.data}!', 'goed')
-        return redirect(url_for('home'))
+    # if form.validate_on_submit():
+    #     flash(f'Account created for {form.username.data}!', 'goed')
+    #     return redirect(url_for('home'))
     return render_template('register.html', title='Register', form=form)
 
 
-@app.route('/login', methods=['GET', 'POST'])
+@app.route('/login') # methods=['GET', 'POST'])
 def login():
     form = LoginForm()
-    if form.validate_on_submit():
-        if form.username.data == 'admin' and form.password.data == 'password':
-            flash('You have been logged in!', 'goed')
-            return redirect(url_for('home'))
-        else:
-            flash('Log in gefaald, probeer opnieuw!', 'failed')
+    # if form.validate_on_submit():
+    #     if form.username.data == 'admin' and form.password.data == 'password':
+    #         flash('You have been logged in!', 'goed')
+    #         return redirect(url_for('home'))
+    #     else:
+    #         flash('Log in gefaald, probeer opnieuw!', 'failed')
     return render_template('login.html', form=form, title='Login')
 
 
