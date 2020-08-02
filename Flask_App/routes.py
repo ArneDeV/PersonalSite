@@ -14,7 +14,7 @@ blog_posts = [
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis illo delectus saepe, error quisquam pariatur laudantium at ab repellendus nihil. Similique dolor vero soluta adipisci doloribus repellendus exercitationem voluptatum qui.
     Deze tekst moet lang zijn vandaar al deze zever, hierna zal deze zever nog eens voorkomen gewoon voor de tekst te vullen Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis illo delectus saepe, error quisquam pariatur laudantium at ab repellendus nihil. Similique dolor vero soluta adipisci doloribus repellendus exercitationem voluptatum qui.
     ''',
-     'date': '05/06/2020', 'photo': 'images/test.png'},
+     'date': '05/06/2020', 'photo': False},
     {'title': 'Test Post 2',
      'content': 'Dit is een tweede test post',
      'date': '05/06/2020',
