@@ -5,12 +5,19 @@
     <!-- Meta Tags, app bar voor Apple support -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#bec2bf">
     <!-- Icons en styling, letertype, ... -->
     <link rel="icon" href="static/images/icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{url_for('static', filename='images/icons/android-icon-192x192.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{url_for('static', filename='images/icons/favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{url_for('static', filename='images/icons/favicon-96x96.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename='images/icons/favicon-16x16.png')}}">
+    <link rel="icon" type="image/png" sizes="144x144" href="{{url_for('static', filename='images/icons/android-icon-144x144.png')}}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='forms.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3d69719818.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 
     <link rel="manifest" href="{{url_for('static', filename='manifest.json')}}">
     <!-- ! IOS support voor icons -->
@@ -29,6 +36,7 @@
     {% else %}
     <title>ArneDeV</title>
     {% endif %}
+
 </head>
 
 <body>
@@ -98,6 +106,8 @@
     </div>
     {% block scripts %}
     {% endblock %}
+    <!-- Script naar app.js -->
+    <script src="{{url_for('static', filename='js/app.js')}}"></script>
     <script>
         function myFunction() {
             var x = document.getElementById("mobile-links");

@@ -253,6 +253,44 @@ header {
     transform: translate(-50%, -5%);
 }
 
+.homepage-img {
+    margin: 20px;
+    width: 50%;
+    height: auto;
+}
+
+.home-text {
+    padding: 10px;
+    border-bottom: 1.5px solid rgb(117, 117, 117);
+}
+
+.progress {
+    background: #bec2bf;
+    justify-content: start;
+    border-radius: 100px;
+    align-items: center;
+    margin: 20px;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 40px;
+    width: 100%;
+ }
+
+.progress-value {
+    animation: load 3s normal forwards;
+    box-shadow: 0 10px 40px -10px rgb(117, 117, 117);
+    border-radius: 100px;
+    background: rgb(117, 117, 117);
+    height: 30px;
+    width: 0;
+}
+
+@keyframes load {
+    0% { width: 0; }
+    100% { width: 30%; }
+  }
+
 @media screen and (max-width: 780px) {
     .logo {
         font-size: 1.9rem;
@@ -304,5 +342,10 @@ header {
     .artikel-afbeelding {
         height: 40%;
         width: 40%;
+    }
+
+    .homepage-img {
+        width: 100%;
+        height: auto;
     }
 }

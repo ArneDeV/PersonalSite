@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+    <img src="{{url_for('static', filename='images/onderhoud.svg')}}" alt="Onderhouds foto" class="homepage-img">
+    <p class="home-text">Welkom op mijn persoonlijke site, deze is nog onder constructie. Eenmaal deze af is zal je onder "Blog" mijn projecten kunnen vinden
+        en onder foto's enkele van mijn foto's (Verassing). Voorlopig heeft het geen enkel nut om een account aan te maken, aangezien er voorlopig nog geen functionaliteit is voor
+        accounts. Hieronder zie je een (schatting) van progress aan de site, deze bar zal niet altijd up-to-date zijn. En kan ook terug dalen afhankelijk van insperatie voor extra zaken
+        toe te voegen.
+    </p> 
+    <div class="progress">
+        <div class="progress-value"></div>
+    </div>
+
+{% endblock content %}
