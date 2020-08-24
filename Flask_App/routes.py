@@ -66,6 +66,10 @@ def home():
     return render_template('home.html')
 
 
+@app.route('/about')
+def about():
+    return render_template('about.html', title="About me")
+
 @app.route('/photos')
 def photos():
     photos = photo_galery

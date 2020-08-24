@@ -43,7 +43,6 @@ li, a, button {
 }
 
 .logo {
-    cursor: pointer;
     display: inline-block;
     margin-right: auto;
     font-weight: 700;
